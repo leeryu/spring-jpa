@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true # to beautify or pretty print the SQL
+  datasource:
+    url: jdbc:mariadb://localhost:3306/employees?useSSL=false
+    username: root
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+logging:
+  level:
+    # show parameter binding
+    org.hibernate.type.descriptor.sql: trace
